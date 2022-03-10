@@ -1,0 +1,83 @@
+@media (max-width: 767px) {
+                              /* Header */
+  .burger-menu {
+    display: none;
+  }
+
+  .header__content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .header__logo-link {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+
+                              /* Choice  */
+
+  .section-choice {
+    padding-bottom: 135px;
+  }
+
+  .section-choice__content {
+    padding-top: 80px;
+    padding-right: 150px;
+  }
+
+  .section-choice__title {
+    margin-bottom: 20px;
+  }
+
+  .section-choice__img {
+    display: none;
+  }
+
+                            /* Advantages */
+  .section-advantages__img {
+    background-size: 150px 134px;
+    background-position: top;
+  }
+
+  .section-advantages__title {
+    margin-bottom: 15px;
+  }
+
+  .advantages-list {
+    padding-bottom: 40px;
+  }
+
+                            /* Teachers */
+  .section-teachers {
+    padding-bottom: 38px;
+  }
+
+ .teachers-list__item {
+   padding-right: 0;
+   margin-bottom: 22px;
+ }
+
+                            /* Courses */
+ .section-courses {
+   padding-bottom: 50px;
+ }
+
+ .courses-list__item {
+  margin-bottom: 30px;
+ }
+
+ .courses-list__title {
+   line-height: 23px;
+ }
+
+ .courses-list__content {
+   padding-right: 17px;
+   padding-bottom: 25px;
+ }
+
+ .courses-list__btn {
+   padding-left: 49px;
+   padding-right: 49px;
+ }
+}

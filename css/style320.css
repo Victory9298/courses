@@ -1,0 +1,265 @@
+@media (max-width: 575px) {
+
+                                      /* Header */
+.header__content  {
+  padding-top: 0;
+  padding-bottom: 28px;
+}
+
+.header__logo-link {
+  padding-top: 32px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.nav {
+  padding-right: 0;
+  display: flex;
+}
+
+.nav__item {
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 56px;
+}
+
+.menu {
+  overflow: hidden;
+  position: fixed;
+  transform: translate(-101%);
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  left: -100%;
+  transition: 0.8s;
+}
+
+.menu.is-active {
+  transform: none;
+  position: fixed;
+  left: 0vw;
+  right: 0;
+  z-index: 20;
+  padding-top: 76px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #2F2C45;
+  padding-left: 60px;
+  overflow: hidden;
+  padding-left: 15px;
+  height: 100vh;
+}
+
+.burger {
+  width: 25px;
+  height: 19px;
+  z-index: 21;
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 27px;
+  padding-right: 3px;
+}
+
+.burger {
+  --burger-width: 20px;
+  --burger-height: 17px;
+  --burger-line-height: 2px;
+  position: relative;
+  border: none;
+  padding: 0;
+  width: var(--burger-width);
+  height: var(--burger-height);
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.burger::before, .burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: var(--burger-line-height);
+  background-color: currentColor;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  top: calc(100% - var(--burger-line-height));
+}
+.burger__line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: var(--burger-line-height);
+  background-color: currentColor;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out;
+}
+.burger--active::before {
+  top: 50%;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+.burger--active::after {
+  top: 50%;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+.burger--active .burger__line {
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+.burger:focus::after {
+  opacity: 1;
+}
+
+                                        /* Choice */
+
+
+.section-choice {
+  padding-bottom: 50px;
+}
+
+.section-choice__title {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.section-choice__description {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 45px;
+}
+
+.section-choice__content {
+  padding-top: 50px;
+  padding-right: 0;
+}
+
+.section-choice__btn {
+  padding-left: 52px;
+  padding-right: 52px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+
+                                        /* Advantages */
+.section-advantages {
+  padding-top: 50px;
+}
+
+.section-advantages__title {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 3px;
+}
+
+.section-advantages__content {
+  margin-bottom: 15px;
+}
+
+.advantages-list {
+  padding-bottom: 30px;
+}
+
+.advantages-list__item {
+  padding-top: 10px;
+  padding-left: 110px;
+  padding-bottom: 0px;
+  padding-right: 10px;
+  margin-bottom: 23px;
+  background-position: left top;
+}
+
+.advantages-list__item {
+  min-height: 80px;
+}
+
+.advantages-list-column:nth-child(2) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.advantages-list-column:nth-child(3) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+                                            /* Teachers */
+
+.section-teachers {
+  padding-top: 48px;
+  padding-bottom: 5px;
+}
+
+.section-teachers__title {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.teachers-list__item {
+  margin-bottom: 24px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+}
+
+                                            /* Course */
+
+.section-courses {
+  padding-top: 46px;
+  padding-bottom: 15px;
+}
+
+.courses-list__item {
+  min-height: 635px;
+}
+.section-courses__title {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.courses-list__content {
+  padding-right: 27px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+.blender .courses-list__content {
+  padding-top: 25px;
+  margin-bottom: 100px;
+}
+
+.threeDS .courses-list__title {
+  padding-right: 62px;
+}
+
+.threeDS .courses-list__content {
+  padding-top: 25px;
+  padding-right: 30px;
+  margin-bottom: 120px;
+}
+
+.courses-list__btn {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+}
